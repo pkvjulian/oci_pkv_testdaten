@@ -1,0 +1,129 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="bcb6e562-ea4c-40a0-adee-d8ababb73f7f"/>
+    <meta>
+        <profile value="https://gematik.de/fhir/eeb/StructureDefinition/EEBBescheinigungBundle"/>
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:bcb6e562-ea4c-40a0-adee-d8ababb73f7f"/>
+    </identifier>
+    <type value="message"/>
+    <timestamp value="2025-07-02T16:19:45+02:00"/>
+    <entry>
+        <fullUrl value="https://gematik.de/fhir/MessageHeader/7f17157d-1a87-432a-b851-c3d7996cfc48"/>
+        <resource>
+            <MessageHeader xmlns="http://hl7.org/fhir">
+                <id value="7f17157d-1a87-432a-b851-c3d7996cfc48"/>
+                <meta>
+                    <profile value="https://gematik.de/fhir/eeb/StructureDefinition/EEBBescheinigungHeader"/>
+                </meta>
+                <eventCoding>
+                    <system value="https://gematik.de/fhir/directory/CodeSystem/OrganizationProfessionOID"/>
+                    <code value="1.2.276.0.76.4.59"/>
+                    <display value="Betriebsstätte Kostenträger"/>
+                </eventCoding>
+                <source>
+                    <endpoint value="https://kbvbc-appliance01-ru-rz05.app.rtu.kbvbc.vrz0506.riseops.de/KIM/risePkvDemo"/>
+                </source>
+                <focus>
+                    <reference value="Patient/fb1a0b97-2562-4b64-ac83-385918a38c5a"/>
+                </focus>
+                <focus>
+                    <reference value="Coverage/55acaeb8-881b-427b-831a-3c288fec5bdd"/>
+                </focus>
+            </MessageHeader>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://gematik.de/fhir/Patient/fb1a0b97-2562-4b64-ac83-385918a38c5a"/>
+        <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+                <id value="fb1a0b97-2562-4b64-ac83-385918a38c5a"/>
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Patient|1.1.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+                            <code value="PKV"/>
+                        </coding>
+                    </type>
+                    <system value="http://fhir.de/sid/pkv/kvid-10"/>
+                    <value value="P541254120"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="Porter">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+                            <valueString value="Iris"/>
+                        </extension>
+                    </family>
+                    <given value="Iris"/>
+                </name>
+                <birthDate value="1962-08-18"/>
+                <address>
+                    <type value="both"/>
+                    <line value="Häusleweg 5">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                            <valueString value="Häusleweg"/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                            <valueString value="5"/>
+                        </extension>
+                    </line>
+                    <line value="Hinterhof">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+                            <valueString value="Hinterhof"/>
+                        </extension>
+                    </line>
+                    <city value="Stuttgart"/>
+                    <postalCode value="70597"/>
+                    <country value="D"/>
+                </address>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://gematik.de/fhir/Coverage/55acaeb8-881b-427b-831a-3c288fec5bdd"/>
+        <resource>
+            <Coverage xmlns="http://hl7.org/fhir">
+                <id value="55acaeb8-881b-427b-831a-3c288fec5bdd"/>
+                <meta>
+                    <profile value="https://gematik.de/fhir/eeb/StructureDefinition/EEBCoverageEgk"/>
+                </meta>
+                <extension url="http://fhir.de/StructureDefinition/gkv/version-vsdm">
+                    <valueString value="5.2.0"/>
+                </extension>
+                <extension url="https://gematik.de/fhir/eeb/StructureDefinition/PersoenlicheVersichertendaten">
+                    <valueBase64Binary value="H4sIAAAAAAAAA71U0W7aQBB85yusew+HSVwgOh+KoC1IJKCgkr6hq71gK/a5uj1Dw/f0T/pjWTspYJtKfYol29q52Znx6s5i+CtNnB0YjDPtM7fdYQ7oIAtjvfXZdDm/6ve9wZXrMQet0qFKMg0+ewFkQ9kS30brBfVmoJM4iGBV6NDbWCAqPb7fz5zR+H69+vy4nM4ffOa1u4UFmWr0WWTtz1vO99jeQqps/NwOgW8U32GYFg++Iz6TLYcucSZu3qA6rNfTsVx4N263uDuC19dOXWVqfQJK8Cv8yI1FSp6n0h186nb6bl/wClztWGVGqxTk1MRIdu9VlfOggqiEF1kRXfAjUHfHIEogiKx8KkyPVcMSlT3sSUx+MSovbY9I3ToFjYe8WCYyxJuyoQJXOxYZ2g3luwsNINYiHhkJxPagokT2Ot6gJ3gFa7bMKdjS5tZulbGCz+s5K87SvX4TLIsmb0a7sAmXS09ZpJFSJIq2HxjaxSDHgl+Cm7q8KXzKcXEcYmmNIlR//LA+cAjnXyonf37nmMAetoL/xZrsicpR52lK59QT/KyqTfef86MhnZ3PyjkmEcH/47cjW69vqXvH2wQAAA=="/>
+                </extension>
+                <extension url="https://gematik.de/fhir/eeb/StructureDefinition/AllgemeineVersicherungsdaten">
+                    <valueBase64Binary value="H4sIAAAAAAAAA42TUU/CMBSF3/kVS99ZN2Q6TVeDYJAgYCSi8WWp22Vb2O7MWlD59XZIdAMU97Al95x+p/e2Y5fvWWqsoJBJjh6xTYsYgEEeJhh5ZDCdNF3XOW/aDjGkEhiKNEfwyAdIcskb7KHrd9I0ggwShFlJCWIolhjJUCjAp9Gt0e2N/Nn1/XQwGXvEMVtlgs5E6ZFYqdcLSt+kqQlCJQszBDoXdCXDrHzRlfYT3jD0w77pCoqvUr1chsogXqr1j7pxXEGUIPKW1XIst2Uxui3UXcNc6g2rQkBU5R/WF4Co87h96tptq31yxuhB/QgmFYAhFHrawHs7iKq2jxmLDPiNSFPQLYMxLATqzFV1FoYw+yajG2e9VfpLr4z+OUz2vJRCrROc53KHWFH6w9mB/VYOD0WhuF3J2pb2F1WofuelgCAuh+ofTNgseJzccUsfcPndx9H/8mrOmlpTtveS1i8mo8f/Cd74BCq+OZx3AwAA"/>
+                </extension>
+                <status value="active"/>
+                <type>
+                    <coding>
+                        <system value="http://fhir.de/CodeSystem/versicherungsart-de-basis"/>
+                        <code value="PKV"/>
+                        <display value="private Krankenversicherung"/>
+                    </coding>
+                </type>
+                <beneficiary>
+                    <reference value="Patient/fb1a0b97-2562-4b64-ac83-385918a38c5a"/>
+                </beneficiary>
+                <period>
+                    <start value="2025-08-20"/>
+                    <end value="2025-08-20"/>
+                </period>
+                <payor>
+                    <identifier>
+                        <system value="http://fhir.de/sid/arge-ik/iknr"/>
+                        <value value="168140437"/>
+                    </identifier>
+                    <display value="Hallesche Krankenversicherungs a.G."/>
+                </payor>
+            </Coverage>
+        </resource>
+    </entry>
+</Bundle>
