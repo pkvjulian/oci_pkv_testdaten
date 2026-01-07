@@ -20,7 +20,7 @@
                 <eventCoding>
                     <system value="https://gematik.de/fhir/directory/CodeSystem/OrganizationProfessionOID"/>
                     <code value="1.2.276.0.76.4.59"/>
-                    <display value="BetriebsstÃ¤tte KostentrÃ¤ger"/>
+                    <display value="Betriebsstätte Kostenträger"/>
                 </eventCoding>
                 <source>
                     <endpoint value="https://kbvbc-appliance01-ru-rz05.app.rtu.kbvbc.vrz0506.riseops.de/KIM/risePkvDemo"/>
@@ -54,7 +54,7 @@
                 </identifier>
                 <name>
                     <use value="official"/>
-                    <family value="Oâ€™RuÅ¾iÄ‡-Å tÈhl">
+                    <family value="O?Ru¸i?-¦t?hl">
                         <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
                             <valueString value="Albert"/>
                         </extension>
@@ -74,7 +74,7 @@
                     </line>
                     <line value="Souterrain">
                         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
-                            <valueString value="UntergeschoÃŸ"/>
+                            <valueString value="Untergeschoß"/>
                         </extension>
                     </line>
                     <city value="Vechta"/>
@@ -96,10 +96,10 @@
                     <valueString value="5.2.0"/>
                 </extension>
                 <extension url="https://gematik.de/fhir/eeb/StructureDefinition/PersoenlicheVersichertendaten">
-                    <valueBase64Binary value="H4sIAAAAAAAEAL1US27bMBDd5xQCN11ZlBKrtguKRhC3iYE4CmLUzc5gpLElhKIKknJSH6hn6PE6UlpbnwQoUCBaUJg3n/c4mCGbPufS2YE2WaFC4rsecUDFRZKpbUjmy2gwHgeTgR8Qx1ihEiELBSH5AYZM+Qn7v+yvF+tbzC1AySxOYVXVwb+2gKF43C+unYvZYr36fLecRzchCdzTigJJlQlJau33T5Q+GXcLubDZo5sA3Qi6M0leHXSH8YSfOPixRnH9AnVhtZ7P+BfPG30MxsEoYLTrO2bVqtURqMFLeCi1Nai8zLk/Gfre0Bsz2oLbGatCK5EDP5cPSIKEf+x21I2I0xqOPtyVv7J48NNOU8noAe/KMHEqIU4tX1TsB6vHbYTdPxXa8ivQumY/IF0FOSizLys3v9RiU5E3oHb0bWHsBrWdJxqM6cg7REjI7F6kkg8nZ6MRoy2snxKhqFV1DcFo1BXYouX+2Uu12ujHXeMc9uHa9a1IlUEJUuAAgsY5Bj5j9DW4X5f2Cx91vNoLtrRaIKreuVPv2IHmNXkkE1C4DFvQDmIuo389/ZwrURpV5jkuq4+r2DA7HX6zh9ioxpa2thmLMPoPjw//DQSB3z4eBQAA"/>
+                    <valueBase64Binary value="H4sIAAAAAAAEAL1US27bMBDd5xQC9xalxqrtgmIQxG1iII6CGHW6MxhpbAmlqIKknNan6Um6aoCeoyfpSGlsfRIgq2hBYd583uNghuzkey6dLWiTFSokvusRB1RcJJnahGS2iAbjcTAZ+AFxjBUqEbJQEJIfYMgJP2Kfz1bXmFuAklmcwrKqg39tAUPx+DK/dM6m89Xy481iFl2FJHDfVRRIqkxIUmu/faD03rgbyIXNvroJ0LWgW5Pk1UG3GE/4kYMfaxTXj1AXVqvZlH/yvNH7YByMAka7vkNWrVodgBo8h7tSW4PKy5z7k6HvDb0xoy24nbEstBI58FN5hyRI+N9uR12JOK3h6O9N+fAr+z14+Gn/pJLRvacrxMSphDi1fF7x760euxF2d19oyy9A65p/j3Q15KDMrqzc/FyLdUXegNrR14Wxa9R2mmgwpiNvHyEhszuRSj6cHI9GjLawfkqEopbVNQSjUVdgi5b7x4/VaqMfd4mT2Idr122RKoMSpMARBI2TDHzK6HNwvy7tFz7oeLYXbGG1QFS9cafesAPNa/JIJqBwHTagHcRcRp88/ZwLURpV5jmuq4/L2DA7HX6xh9ioxp629hmLMPqK54f/A4la7f/iBAAA"/>
                 </extension>
                 <extension url="https://gematik.de/fhir/eeb/StructureDefinition/AllgemeineVersicherungsdaten">
-                    <valueBase64Binary value="H4sIAAAAAAAEAKWTXW+CMBSG7/crSO+lYGTTpdT4QYzxa9Hplt2QTo5AxMNCq9v89QNnNlA2l4yLkpz3Pc/bHgprvm0ibQeJDGO0iakbRANcxl6Ivk36s0mlXrcaFdMimlQCPRHFCDZ5B0ma/Ir9r3vecVtR5MMGQoRFRlkGkGzRl55QgI+jodbpjtyFM531J2ObWHo1S0gzUdokUOrlltJXqacEocK17gFdCbqT3iZb6C71E36lpQ/7oitIPkvFchYql8FW7b/Vg6MNfojIq0bVMhqGxeixUHQNYpluWCUC/Dy/XF8DYprHzeu6WTNr1RtGS/ULmEgAepCk0wbePUHktXPMWGyAt4b3jjYZdp1xez7tOVNtkAhMo3e5kWitHqMHd/G49IfzMvrrQNnTVgq1D3EVyxNiTukNFiV7zn1AFIniZi7rWDpvylHd1nMCyyAbrFuacGh4mNxxw2A0e5/j6F95BWdBLSjHu0mLl5PRy/8F/wCMrjjRuAMAAA=="/>
+                    <valueBase64Binary value="H4sIAAAAAAAAA42TXW+CMBSG7/0VpPdSILLpUmr8ijF+LTrdshvSwRGJeFhoZZu/fuDMBurmuCjJed8+b3vasub7NtJSSGQYo0NM3SAaoBf7IQYOGcyn1XrdblRNm2hSCfRFFCM45AMkafIKW3TcVhQFsIUQYZlTvDUkOwykLxTg03ikdbpjd9mbzQfTiUNs3coTskyUDlkr9XpH6ZvUM4JQ4Ub3ga4ETaW/zQeaZn7CK1r2sW+6guSrVC7nodJb79T+Rz042hCEiNwyLNtoGDajx0LZNYxltmCVCAiK/Mv6BhCzPG7e1M2aWbNuGb2oX8FEAtCHJOs28O4JoqidYyZiC7w1euhp01G3N2kvZv3eTBsmArPotNASrdVn9OAub5f+sl9G/2woe95JofYhrmJ5Qiwo/eHywpoLB4giUdwsZB1L55MKVLf1koC3zhvrXkw4THic3nPDYDT/n+Pof3klZ0ktKce7ScuXk9Hr74JXPgEHw8P1ewMAAA=="/>
                 </extension>
                 <status value="active"/>
                 <type>
