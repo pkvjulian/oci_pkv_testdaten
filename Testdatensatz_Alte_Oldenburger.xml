@@ -20,7 +20,7 @@
                 <eventCoding>
                     <system value="https://gematik.de/fhir/directory/CodeSystem/OrganizationProfessionOID"/>
                     <code value="1.2.276.0.76.4.59"/>
-                    <display value="Betriebsstätte Kostenträger"/>
+                    <display value="BetriebsstÃ¤tte KostentrÃ¤ger"/>
                 </eventCoding>
                 <source>
                     <endpoint value="https://kbvbc-appliance01-ru-rz05.app.rtu.kbvbc.vrz0506.riseops.de/KIM/risePkvDemo"/>
@@ -74,7 +74,7 @@
                     </line>
                     <line value="Souterrain">
                         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
-                            <valueString value="Untergeschoß"/>
+                            <valueString value="UntergeschoÃŸ"/>
                         </extension>
                     </line>
                     <city value="Vechta"/>
